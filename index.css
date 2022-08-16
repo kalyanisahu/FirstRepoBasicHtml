@@ -1,0 +1,117 @@
+body {
+  border: 1px solid black;
+  margin: 30px;
+  padding: 30px;
+  /* background-image: url(images/bg-image.jpg); */
+}
+
+/* h1:visited{
+color:red
+} */
+
+h1 {
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-color: blue;
+  text-decoration-style: solid;
+  text-transform: uppercase;
+  font-family: monospace;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 40px;
+}
+label {
+  /* color:blueviolet; */
+  /* color: rgba(255,99,71,0.3); */
+  color: #000000;
+}
+
+/* form h1{
+  background-color: green;
+} */
+.firstname {
+  border-radius: 4px;
+  background-color: red;
+  width: 100%;
+  max-width: 20%;
+}
+form > input {
+  background-color: yellow;
+}
+
+input[type="password"] {
+  /* background-color:pink;
+  border-style: dotted; */
+  border-radius: 4px;
+  border-color: green;
+  /* border-width: 5px; */
+  border: 5px dotted pink;
+}
+span {
+  display: block;
+}
+div {
+  /* display: none; */
+  visiblity: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    color: red;
+  }
+}
+
+.text1 {
+  border: 3px solid green;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+}
+.text2 {
+  border: 3px solid red;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  background-color: #2196f3;
+  padding: 10px;
+}
+.grid-item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1/3;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.overflow-text {
+  background-color: coral;
+  width: 200px;
+  height: 65px;
+  border: 1px solid;
+  overflow: hidden;
+}
+/* h1::first-letter{
+color:red ;
+} */
+a:hover {
+  color: red;
+  width: 200px;
+}
+
+.animated:hover {
+  width: 200px;
+  height: 300px;
+  transform: rotate(120deg);
+}
+
+.animated {
+  background-color: red;
+  transition: width 2s, height 10s, transform 2s;
+  /* transition: width 2s, height 10s; */
+  width: 100px;
+}

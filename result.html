@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div id="results">
+        <script>
+            const resultData=document.getElementById("results")
+            new URLSearchParams(window.location.search).forEach((value,name)=>{resultData.append(`${name}:${value}`)
+            resultData.append(document.createElement('br'))
+        })
+            </script>
+    </div>
+</body>
+</html>
