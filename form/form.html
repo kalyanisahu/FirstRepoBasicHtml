@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+  <title>first project</title>
+  <link rel="stylesheet" type="text/css" href="form.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <h1>Registration Form</h1>
+  <form name="form" action="" onsubmit="return validate()" method="POST">
+    <div class="formelement" id="name">
+      FullName: <input type="text" id="fullname" name ="fullname" required/><span class="error"></span>
+    </div>
+    <div class="formelement" id="email" >
+      Email: <input type="email" name="email" /><span class="error" required></span>
+    </div>
+    <div  class="formelement" id="phone">
+      MobileNo: <input type="phone"  name="phone"/><span class="error" required></span>
+    </div>
+    <div  class="formelement" id="country">
+    Country: <select name="country" id="country" onchange="handleOnChange(this.value)">
+      <option value="in">India</option>
+      <option value="canada">Canada</option>
+    </select>
+  </div>
+    <input class="btn" type="submit" onclick="clickHandler();"/>
+
+  </form>
+  <div  class="content" id="content">
+    <p id="para">JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries</p>
+    <button id="toggleBtn" onclick="toggle()">Show/Hide</button>
+  </div>
+  <script src="form.js"></script>
+</body>
+
+</html>
