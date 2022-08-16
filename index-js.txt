@@ -1,5 +1,5 @@
 // // console.log("hello my first js");
-// // let employee;
+// // let employee 123;
 
 // // let firstName = "Nitesh";
 // // let secondName = "Chaithali";
